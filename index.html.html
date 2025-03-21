@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOIRE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+        nav a:hover {
+            color: #777;
+        }
+        .hero, .large-image {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero {
+            background: url( 'https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/484491604_1278177876614595_3703893183900466660_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=zf61l6-8RtoQ7kNvgHwK8Ms&_nc_oc=Adkyp5zfUGRQhN8ZB-fdNSBa8uDhH3VACDevHwcJfLnXrGAUnquvGVGKjXHKIkzXW_8&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1wEWj6dj7-OMnpiELRkAtJ3P7tv-7RuzBADzoBxDmoivng&oe=680501D2') center/cover no-repeat;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+        }
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+        }
+        .contact-section p {
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">GLOIRE</div>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Elegant Flowers for Every Occasion</h1>
+    </div>
+    <div id="shop" class="container">
+        <div class="large-image" style="background: url('https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/483859786_4157258987894267_4308190042200639285_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Hr8VZETy0vgQ7kNvgHlx9--&_nc_oc=Adn3vwJWCIrjJPO2V0lhQeTosOZPPJ7MC1tIMtSzpaZInShw2Z9q5vRx8pBxnJqD83I&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wFS9dQ8iDmDI3QHCTLwb06wD5uwYR-5J10OyS5sCkuzOw&oe=6804FB64') center/cover no-repeat;"></div>
+        <div class="grid">
+            <div class="product"><img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/483680511_2165508827213748_6131384408589415866_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NrTGrymokjsQ7kNvgFk38jl&_nc_oc=AdmByAwuc9tE9aRgkOE-P9UBqlFytEBcFp2jnD73lL1a_GqU8NqaC_lAEuNpZ1VY9C4&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1wFmGay-MKvtags8YlxJSlFOHjhpk2Azs8EoDnA6XeTvZA&oe=68051796" alt="Hyacint Harmony"><h3>Roses</h3><p>P300</p></div>
+            <div class="product"><img src=" https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/484021467_574413198977483_5216292593254367913_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=3OpQY34CqzEQ7kNvgETmVk-&_nc_oc=AdnIbSm4mj48vw_jWv9vP01NgYkTjWf4ES3s4D8NVzrCk2lfjOWWJA-YLnJegaXAw_k&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wGfp07-AjWTrgfdoSvkRN-ZjzeEsvwKo9Tbv319FmE-GA&oe=68051467 " alt="Tulips"><h3>Forever Yours</h3><p>P450</p></div>
+            <div class="product"><img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/483760081_1193188755549905_7591775544836084226_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=9hsI3z8C5XMQ7kNvgEzxsEg&_nc_oc=AdnYGuP9kGszrpSVusVo2TsH2hID88gfjy7dhbWUN6pTAa0xyLqExQqbsku5vXlHVAg&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1wH2Qy0QteHTA6eBq0NXG1LMadT160pvyI2DyyPzF7KNMQ&oe=68051848" alt="Daisy Daydreams"><h3>Sunflowers</h3><p>P380</p></div>
+        </div>
+        <div class="large-image" style="background: url('https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/483188062_996431655779900_4427715973069489521_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=2xyEyYQh9sAQ7kNvgHpkOqR&_nc_oc=AdkdibsesgPBhTl6DQ9_pZ4Jv_dIjLCyLbYza9g8fYQ4-Vx7SF6Z9OMsSDV_jo3SPbA&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wEaMTCtBAOzWNMzcrUAPBCXFxpSkWLMHtHeE8smvH972g&oe=6804FAD0') center/cover no-repeat;"></div>
+        <div class="grid">
+            <div class="product"><img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/484325394_621667827406784_8677028058638352523_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=5SNEAavuWy4Q7kNvgEviOz0&_nc_oc=AdnLMgeb96nRbOWuLxhMbUBiMoFL1Hiy8fP38KyY9XKpbONazNouib7cmB_sYJTrBYk&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wGKG1a0PRs6tGB0b9J9CLohKX_wTuZPrQiHUd_Nh_5Mtw&oe=6804E947" alt="Sunflower Bliss"><h3>Sunflower Bliss</h3><p>P475</p></div>
+            <div class="product"><img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/484794061_1181904356763159_3043531752346357381_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=9HX9yn-ww_wQ7kNvgFLfNLs&_nc_oc=Adl01u6TEp5U3_GP8oohnbNn2Qf6eRebW8CunSSj3OUzY0W6XuX9sEbMT5RB9EpjAXo&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&oh=03_Q7cD1wE-6aYIkIrQeQi3bCxKcGcZs-BJnyfjxunJqpR0G4yHIQ&oe=6804F662" alt="Orchids"><h3>Lily-Tulip Serenade</h3><p>P800</p></div>
+            <div class="product"><img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/484305649_1110460897521468_5083214335600038662_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=TvKvw2ZezXAQ7kNvgEwEKPi&_nc_oc=AdkylLf_Tvah2CqNixOb7mIecH2fBW73FJ1WUPAH7WARuTf9YB2h6IO9cSkPrC-ULBI&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wEnxetB-xYcoivD3CtUruY2RJAHM7d3zbuaXO3uP843_w&oe=6804FFEE" alt="Daisies"><Sonata Bouquet</h3><p>P150</p></div>
+        </div>
+        <div class="large-image" style="background: url('https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/484310966_1212790166875781_1762711200764338146_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ZL4-v1aogLwQ7kNvgE9yFsb&_nc_oc=AdnZJQblGXL1j6JP8umassUpE5oH3sFvBgWMId_E250tsSQudAJY3f3KEpdMUBeZBcw&_nc_zt=23&_nc_ht=scontent.fmnl17-6.fna&oh=03_Q7cD1wGtLsZkx-fYIL0r_DEMl38riIMSRfbkof2dQZ0VSHEPAQ&oe=680508FE') center/cover no-repeat;"></div>
+        <div class="grid">
+            <div class="product"><img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/484236686_1029438992422356_7451769571827307557_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=iH8-6DXcvS4Q7kNvgEmlgj4&_nc_oc=AdmyeWVCnZ6pp2U9pNMTvKo4YAm5MrL24yro0kcNOaYS5JJ4HgOiOW6HIAYV8hWbFXA&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&oh=03_Q7cD1wE6Q7kkuk-mxy7yjpxiDuCCX0p3AfVOIORPMyOtviXXgg&oe=68050814" alt="Camellia"><h3>Camellia</h3><p>P465</p></div>
+            <div class="product"><img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/485709343_1653982782159337_3762207454770587176_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=XXO6qkYmZPIQ7kNvgGoI3A0&_nc_oc=AdkmYrWg8AVtXY1-OOQ8ft4dH7i6KiPLjHjn4foNV4rpR59k7IIquYRccQcJhhJlQdo&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wH7D_hoeAZ9vvtC0bgxj8vLhUukxJLMhVbSBA1vc2NT3Q&oe=6804EB95" alt="Mini Rose Blossom"><h3>Mini Rose Blossom</h3><p>P420</p></div>
+            <div class="product"><img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/484979610_1723081211754077_302053558563554566_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=qFfzfP9LjXwQ7kNvgEvM3mQ&_nc_oc=AdnSRKp9HLfPfZh19yGNmtAXqt7V00LCX9tjfH23gQEdfkbylPFx3e-dXg4TlD925HU&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&oh=03_Q7cD1wGy_826ayMrF5xRbGytDNpfaG0P990Ck-r9Tgjb2XXRNQ&oe=6805117E" alt="Tulip Serenade"><h3>Tulip Serenade</h3><p>P560</p></div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@shopgloire.com</p>
+        <p>Phone: +993 762 7832</p>
+        <p>Address: Amandaka Village, Barangay Lantic, City of Carmona, Cavite</p>
+    </div>
+
+    <footer>
+        &copy; 20256 GLOIRE | All Rights Reserved
+    </footer>
+</body>
+</html>
